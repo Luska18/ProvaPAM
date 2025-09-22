@@ -6,12 +6,19 @@ using System.Threading.Tasks;
 
 namespace AppRpgEtec.Models
 {
-    internal class Endereco
+    public class Endereco
     {
-        public int place_id { get; set; }
-        public string lat { get; set; }
-        public string lon { get; set; }
-        public string name { get; set; }
-        public string display_name { get; set; }
+        public string PlaceId { get; set; }
+        public string Licence { get; set; }
+        public double Lat { get; set; }
+        public double Lon { get; set; }
+        public string Class { get; set; }
+        public string Type { get; set; }
+        public int PlaceRank { get; set; }
+        public double Importance { get; set; }
+        public string Addresstype { get; set; }
+        public string Name { get; set; }
+        public string DisplayName { get; set; }
+        public List<string> BoundingBox { get; set; }
     }
 }
